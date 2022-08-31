@@ -1,0 +1,15 @@
+defaults
+auth           on
+tls            on
+tls_starttls   on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+logfile        /var/log/msmtp.log
+account        msmtp
+host           smtp.ionos.fr
+port           587
+from           mail@domain.com 
+user           user@ionos 
+password       password 
+
+# Definition du compte par defaut
+account default : msmtp
